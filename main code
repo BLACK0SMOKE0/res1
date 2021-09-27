@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo "Welkom bij mijn script!!"
+echo "de installatie van de webserver start nu"
+sleep 1s
+apt install apache2
+systemctl stop apache2.service
+systemctl start apache2.service
+systemctl enable apache2.service
